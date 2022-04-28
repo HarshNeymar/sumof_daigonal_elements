@@ -1,0 +1,37 @@
+#include<stdio.h>
+
+#define N 20
+
+void main(){
+
+int x[N][N][N], m,n,p; // rows , columns height 
+
+int sum =0, i,j,k; //init variables for sum and indices 
+
+scanf(“%d%d%d”, &m, &n, &p); // read all three dimensions size 
+
+//read the matrix 
+
+for(i=0;i<m;i++)
+
+for(j=0; j<n; j++)
+
+for(k=0; k<p; k++)
+
+scanf(“%d”, &x[i][j][k]);
+
+//find sum 
+
+for(i=0;i<m;i++)
+
+for(j=0; j<n; j++)
+
+for(k=0; k<p; k++)
+
+sum += x[i][j][k];
+
+printf(“sum = %d\n”, sum);
+
+return 0;
+
+}
